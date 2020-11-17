@@ -108,7 +108,7 @@ client.on("ready", async () => {
 
     console.log(`${client.user.username} is online.`);
 
-    client.user.setActivity("Ik ben aan het leren :)", { type: "PLAYING" });
+    client.user.setActivity("Ik ben der 24/7 :)", { type: "PLAYING" });
 
 });
 
