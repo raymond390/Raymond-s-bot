@@ -15,9 +15,16 @@ module.exports.run = async (client, message, argument) => {
     .setTimestamp()
     .setFooter('Defensie', '');
 
-return message.channel.send(botEmbed);
+    if (channel.name == userName.toLowerCase() + "-" + userDiscriminator) {
+        ticketBestaat = true;
+
+        message.reply("test");
+
+        return;
+
 
     } else {
+        
 
     message.channel.send("Gelieve dit command te doen bij een ticket.");
     }
