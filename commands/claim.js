@@ -1,31 +1,26 @@
 const discord = require("discord.js");
 
-module.exports.run = async (client, message, args) => {
-
+module.exports.run = async (client, message, argument) => {
     const categoryID = "761879667124600842";
-
-    if (!message.member.hasPermission("KICK_MEMBER")) return message.reply("Jij kan dit niet doen");
 
     if (message.channel.parentID == categoryID) {
 
+    var botEmbed = new discord.MessageEmbed()
+    .setTitle('Claim')
+    .setColor("#0099ff")
+    .setDescription("Je hebt deze ticket geclaimt")
 
-        // Channel voor logging
-        if (!ticketChannel) return message.reply("Kanaal bestaat niet");
-                   
+    .setThumbnail('')
+    .setImage('')
+    .setTimestamp()
+    .setFooter('Defensie', '');
 
-        ticketChannel.send(embedCreateTicket);
-
-    } else {
-
-        message.channel.send("Gelieve dit command te doen bij een ticket.");
-
+return message.channel.send(botEmbed);
     }
-
-
-
 }
+
 module.exports.help = {
-    name: "claim",
+    name: "hallo",
     description: "Geeft al de verschillende commands",
     category: "Informatie"
 }
