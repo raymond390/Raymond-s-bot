@@ -16,6 +16,10 @@ module.exports.run = async (client, message, argument) => {
     .setFooter('Defensie', '');
 
 return message.channel.send(botEmbed);
+
+    } else {
+
+    message.channel.send("Gelieve dit command te doen bij een ticket.");
     }
 }
 
