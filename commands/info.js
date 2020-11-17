@@ -6,7 +6,7 @@ module.exports.run = async (client, message, args) => {
             .setTitle('Informatie')
             .setColor("#0099ff")
             .setDescription("Ik ben aan het leren")
-            .addField(
+            .addFields(
                 {name: "test", value:"test"},
                 {name: "tets", value:"test"},
             )
