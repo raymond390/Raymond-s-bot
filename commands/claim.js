@@ -8,7 +8,6 @@ module.exports.run = async (client, message, args) => {
 
     if (message.channel.parentID == categoryID) {
 
-        message.channel.delete();
 
         // Create embed.
         var embedCreateTicket = new discord.MessageEmbed()
