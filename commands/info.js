@@ -16,10 +16,10 @@ module.exports.run = async (client, message, args) => {
                 {name: "7", value:"test"},
                 {name: "8", value:"test"},
             )
-            .setThumbnail('')
+            .setThumbnail('https://f.jwwb.nl/public/g/w/t/temp-mxahzxdricxvqfpwpnhx/lm5nsv/km.jpg')
             .setImage('')
             .setTimestamp()
-            .setFooter('test', '');
+            .setFooter('test', 'https://f.jwwb.nl/public/g/w/t/temp-mxahzxdricxvqfpwpnhx/lm5nsv/km.jpg');
 
         return message.channel.send(botEmbed);
 
