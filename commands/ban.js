@@ -7,7 +7,7 @@ module.exports.run = async (client, message, argument) => {
         if (!message.guild) return;
       
       
-        if (message.content.startsWith('?ban')) {
+        if (message.content.startsWith('!ban')) {
           const user = message.mentions.users.first()
         
           if (user) {
@@ -19,7 +19,7 @@ module.exports.run = async (client, message, argument) => {
               member.ban({
                 reason: 'They were bad!',
               }).then(() => {
-                message.reply(`Successfully banned ${user.tag}, LOSER HAH! Get the ban hammer boi!`); // this is the message that will be.
+                message.reply(`Succes vol verbannen ${user.tag}, Tot Ziens`); // this is the message that will be.
               }).catch(err => {
               
                 message.reply('I was unable to ban the member. Check if their roles are higher then mine or if they have administrative permissions!'); // if a user does not have permission to use a command on a user or as a member, this message will be send.
