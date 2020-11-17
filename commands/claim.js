@@ -9,19 +9,15 @@ module.exports.run = async (client, message, args) => {
 
         
 
-        // Create embed.
-        var embedCreateTicket = new discord.MessageEmbed()
-            .setTitle("Ticket, " + message.channel.name)
-            .setDescription("Het ticket is gemarkeerd als **compleet**.")
-            .setFooter("Ticket gesloten");
-
         // Channel voor logging
+   
         if (!ticketChannel) return message.reply("Kanaal bestaat niet");
-
         var embedCreateTicket = new discord.MessageEmbed()
-            .setTitle("Ticket, " + message.channel.name)
-            .setDescription("test.")
-            .setFooter("Ticket gesloten");
+        .setTitle("Ticket, " + message.channel.name)
+        .setDescription("Het ticket is gemarkeerd als **compleet**.")
+        .setFooter("Ticket gesloten")
+
+        ticketChannel.send(embedCreateTicket);
 
     } else {
 
@@ -29,6 +25,9 @@ module.exports.run = async (client, message, args) => {
 
     }
 
+
+
+}
 module.exports.help = {
     name: "claim",
     description: "Geeft al de verschillende commands",
