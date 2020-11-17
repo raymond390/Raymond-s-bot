@@ -9,20 +9,10 @@ module.exports.run = async (client, message, args) => {
     if (message.channel.parentID == categoryID) {
 
 
-        // Create embed.
-        var embedCreateTicket = new discord.MessageEmbed()
-            .setTitle("Ticket, " + message.channel.name)
-            .setDescription("Het ticket is gemarkeerd als **compleet**.")
-            .setFooter("Ticket gesloten");
-
         // Channel voor logging
         if (!ticketChannel) return message.reply("Kanaal bestaat niet");
-                    // Create embed.
-                     var embedCreateTicket = new discord.MessageEmbed()
-                    .setTitle("Ticket, " + message.channel.name)
-                    .setDescription("Het ticket is gemarkeerd als **compleet**.")
-                     .setFooter("Ticket gesloten");
-                     
+                   
+
         ticketChannel.send(embedCreateTicket);
 
     } else {
