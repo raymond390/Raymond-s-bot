@@ -4,11 +4,10 @@ module.exports.run = async (client, message, args) => {
 
     const categoryID = "761879667124600842";
 
-    if (!message.member.hasPermission("KICK_MEMBER")) return message.reply("Jij kan dit niet doen");
 
     if (message.channel.parentID == categoryID) {
 
-       
+        
 
         // Create embed.
         var embedCreateTicket = new discord.MessageEmbed()
@@ -17,12 +16,12 @@ module.exports.run = async (client, message, args) => {
             .setFooter("Ticket gesloten");
 
         // Channel voor logging
-        if (!ticketChannel) return message.reply("je hebt deze ticket geclaimt");
+        if (!ticketChannel) return message.reply("Kanaal bestaat niet");
 
         var embedCreateTicket = new discord.MessageEmbed()
-        .setTitle("Ticket, " + message.channel.name)
-        .setDescription("Het ticket is gemarkeerd als **compleet**.")
-        .setFooter("Ticket gesloten");
+            .setTitle("Ticket, " + message.channel.name)
+            .setDescription("test.")
+            .setFooter("Ticket gesloten");
 
     } else {
 
@@ -30,9 +29,6 @@ module.exports.run = async (client, message, args) => {
 
     }
 
-
-
-}
 module.exports.help = {
     name: "claim",
     description: "Geeft al de verschillende commands",
