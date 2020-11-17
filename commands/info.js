@@ -7,8 +7,8 @@ module.exports.run = async (client, message, args) => {
             .setColor("#0099ff")
             .setDescription("Ik ben aan het leren")
             .addField(
-                {name: "test", value: "test"},
-                {name: "tet", value: "test"}
+                {name: "test", value"test"},
+                {name: "tets", value:"test"},
             )
             .setThumbnail('')
             .setImage('')
