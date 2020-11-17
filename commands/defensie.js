@@ -4,7 +4,6 @@ module.exports.run = async (client, message, args) => {
 
     var botEmbed = new discord.MessageEmbed()
             .setTitle('Defensie')
-            .setDescription("werken bij defensie je moet het maar kunnen")
             .setColor("#0099ff")
             .setDescription("werken bij defensie je moet het maar kunnen")
 
