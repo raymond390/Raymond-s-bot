@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
 
     var text = args.splice(1, args.length).join(" ") || '**Geen tekst opgegeven**';
 
-    var channel = message.member.guild.channels.cache.get("581753986839871498");
+    var channel = message.member.guild.channels.cache.get("760836476102639651");
 
     if (!channel) return message.channel.send("Kanaal bestaat niet");
 
