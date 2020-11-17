@@ -52,7 +52,9 @@ module.exports.run = async (client, message, args) => {
 
                     var embedParent = new discord.MessageEmbed()
                         .setTitle(`Hoi ${message.author.username}`)
-                        .setDescription("Zet hier je bericht / vraag");
+                        .setDescription("Zet hier je bericht / vraag")
+                        .setThumbnail("https://yt3.ggpht.com/a/AGF-l7_P42jUnWAoIvDDHzQH27EIOs5hAoDAwfdgug=s900-c-k-c0xffffffff-no-rj-mo")
+                        
 
                     settedParent.send(embedParent);
 
