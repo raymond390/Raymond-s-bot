@@ -33,7 +33,7 @@ module.exports.run = async (client, message, argument) => {
             }
           } else {
           
-            message.reply('Ey broer jij kan dir niet');
+            message.reply('Geef een naam op');
           }
         }
       });
