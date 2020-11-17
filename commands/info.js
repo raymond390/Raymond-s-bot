@@ -17,7 +17,7 @@ module.exports.run = async (client, message, args) => {
                 {name: "8", value:"test"},
             )
             .setThumbnail('https://f.jwwb.nl/public/g/w/t/temp-mxahzxdricxvqfpwpnhx/lm5nsv/km.jpg')
-            .setImage('')
+            .setImage('https://f.jwwb.nl/public/g/w/t/temp-mxahzxdricxvqfpwpnhx/lm5nsv/km.jpg')
             .setTimestamp()
             .setFooter('test', 'https://f.jwwb.nl/public/g/w/t/temp-mxahzxdricxvqfpwpnhx/lm5nsv/km.jpg');
 
