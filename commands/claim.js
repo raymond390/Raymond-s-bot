@@ -17,10 +17,12 @@ module.exports.run = async (client, message, args) => {
             .setFooter("Ticket gesloten");
 
         // Channel voor logging
-        var ticketChannel = message.member.guild.channels.cache.find(channel => channel.name === "log");
-        if (!ticketChannel) return message.reply("Kanaal bestaat niet");
+        if (!ticketChannel) return message.reply("je hebt deze ticket geclaimt");
 
-        ticketChannel.send(embedCreateTicket);
+        var embedCreateTicket = new discord.MessageEmbed()
+        .setTitle("Ticket, " + message.channel.name)
+        .setDescription("Het ticket is gemarkeerd als **compleet**.")
+        .setFooter("Ticket gesloten");
 
     } else {
 
