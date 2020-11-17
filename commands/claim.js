@@ -7,7 +7,6 @@ module.exports.run = async (client, message, argument) => {
 
     var botEmbed = new discord.MessageEmbed()
     .setTitle('Claim')
-    .setColor("#0099ff")
     .setDescription("Je hebt deze ticket geclaimt")
 
     .setThumbnail('https://yt3.ggpht.com/a/AGF-l7_P42jUnWAoIvDDHzQH27EIOs5hAoDAwfdgug=s900-c-k-c0xffffffff-no-rj-mo')

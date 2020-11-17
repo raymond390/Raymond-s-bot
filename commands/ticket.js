@@ -54,7 +54,7 @@ module.exports.run = async (client, message, args) => {
                         .setTitle(`Hoi ${message.author.username}`)
                         .setDescription("Zet hier je bericht / vraag")
                         .setThumbnail("https://yt3.ggpht.com/a/AGF-l7_P42jUnWAoIvDDHzQH27EIOs5hAoDAwfdgug=s900-c-k-c0xffffffff-no-rj-mo")
-                        
+                        .setFooter('Defensie', '');
 
                     settedParent.send(embedParent);
 
