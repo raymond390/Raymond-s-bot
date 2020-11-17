@@ -3,7 +3,7 @@ const discord = require("discord.js");
 module.exports.run = async (client, message, argument) => {
     if(command === "!unban")
         if(!msg.member.hasPermission("BAN_MEMBERS")) {
-          return msg.channel.send(`**${msg.author.username}**, You do not have perms to unban someone`)
+          return msg.channel.send(`**${msg.author.username}**, Hoi`)
         }
         
         if(!msg.guild.me.hasPermission("BAN_MEMBERS")) {
