@@ -3,7 +3,8 @@ const discord = require("discord.js");
 module.exports.run = async (client, message, args) => {
 
     var serverEmbed = new discord.MessageEmbed()
-            .setDescription("Dit is een test bot ")
+            .setTitle("Defensie")
+            .setDescription("")
             .setColor("#660066")
             .addField("Bot naam", client.user.username)
             .addField("Je bent deze server gejoind op", message.member.joinedAt)
