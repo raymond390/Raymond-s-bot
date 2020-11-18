@@ -5,7 +5,7 @@ module.exports.run = async (client, message, args) => {
 
      try {
 
-         var text = "**Raymond's Bot** \n\n **__Commands__** \n !hallo - Geeft een hallo terug. \n !info - Geeft info.";
+         var text = "**Defensie** \n\n **__Commands__** \n !hallo - Geeft een hallo terug. \n !info - Geeft info.";
 
          message.author.send(text);
 

@@ -1,7 +1,7 @@
 {
-  "name": "discord_bot_yt",
+  "name": "Defensie bot",
   "version": "1.0.0",
-  "description": "Discord bot voor YT serie",
+  "description": "Defensie",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "yt",
     "test"
   ],
-  "author": "Jens",
+  "author": "Raymond",
   "license": "ISC",
   "dependencies": {
     "@discordjs/opus": "^0.3.3",
