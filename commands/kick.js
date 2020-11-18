@@ -43,18 +43,18 @@ module.exports.run = async (client, message, args) => {
 
 
         // We kijken dat het de gebruiker is die het als eerste heeft uitgevoerd.
-        // message.channel.awaitMessages(m => m.author.id == message.author.id,
-        //     { max: 1, time: 30000 }).then(collected => {
+         //message.channel.awaitMessages(m => m.author.id == message.author.id,
+           //  { max: 1, time: 30000 }).then(collected => {
 
-        //         if (collected.first().content.toLowerCase() == 'yes') {
-        //             message.reply('Kick speler.');
-        //         }
-        //         else
-        //             message.reply('Geanuleerd');
+                 //if //(collected.first().content.toLowerCase() == 'yes') {
+                   //message.reply('Kick speler.');
+                 //}
+                //else
+               //     message.reply('Geanuleerd');
 
-        //     }).catch(() => {
-        //         message.reply('Geen antwoord na 30 sec, geanuleerd.');
-        //     });
+             //}).catch(() => {
+            //     message.reply('Geen antwoord na 30 sec, geanuleerd.');
+       // });
 
 
         if (emoji === "✅") {
