@@ -17,12 +17,12 @@ module.exports.run = async (client, message, argument) => {
             if (member) {
              
               member.ban({
-                reason: 'They were bad!',
+                reason: '...',
               }).then(() => {
                 message.reply(`Succes vol verbannen ${user.tag}, Tot Ziens`); // this is the message that will be.
               }).catch(err => {
               
-                message.reply('ey man je hebt deze premisie waarschijnlijk niet'); // if a user does not have permission to use a command on a user or as a member, this message will be send.
+                message.reply('je hebt deze premisie waarschijnlijk niet'); // if a user does not have permission to use a command on a user or as a member, this message will be send.
     //** for my bot I would say message.reply(`${author.tag}, sorry, I was unable to ban this user! Check to see if there roles are above mine, or if this user is an admin!`)**\\
             
                 console.error(err);
