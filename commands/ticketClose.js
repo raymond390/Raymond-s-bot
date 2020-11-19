@@ -13,7 +13,7 @@ module.exports.run = async (client, message, args) => {
         // Create embed.
         var embedCreateTicket = new discord.MessageEmbed()
             .setTitle("Ticket, " + message.channel.name)
-            .setDescription("Het ticket is gemarkeerd als **compleet**.")
+            .setDescription("De ticket is gemarkeerd als **compleet**.")
             .setFooter("Ticket gesloten");
 
         // Channel voor logging
