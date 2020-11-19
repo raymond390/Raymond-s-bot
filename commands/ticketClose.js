@@ -2,7 +2,7 @@ const discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
 
-    const categoryID = "761879667124600842";
+    const categoryID = "767843900823175168";
 
     if (!message.member.hasPermission("KICK_MEMBER")) return message.reply("Jij kan dit niet doen");
 
@@ -17,7 +17,7 @@ module.exports.run = async (client, message, args) => {
             .setFooter("Ticket gesloten");
 
         // Channel voor logging
-        var ticketChannel = message.member.guild.channels.cache.find(channel => channel.name === "log");
+        var ticketChannel = message.member.guild.channels.cache.find(channel => channel.name === "『🔒』log");
         if (!ticketChannel) return message.reply("Kanaal bestaat niet");
 
         ticketChannel.send(embedCreateTicket);
