@@ -40,7 +40,7 @@ module.exports.run = async (client, message, argument) => {
 }
 
 module.exports.help = {
-    name: "ban",
+    name: "info",
     description: "Ban iemand",
     category: "Algemeen"
 }
