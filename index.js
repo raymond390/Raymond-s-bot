@@ -73,7 +73,7 @@ client.on("guildMemberAdd", member => {
     const saymessage = args.join(" ");
     message.channel.send(saymessage);
  
-
+    }
 });
 
     var channel = member.guild.channels.cache.get('778617880118820874');
