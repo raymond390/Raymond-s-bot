@@ -6,10 +6,10 @@ module.exports.run = async (client, message, args) => {
     .setColor("#ff0000")
     .setFooter(message.member.displayName, message.author.displayAvatarURL)
     .setTimestamp()
-    .setDescription(`**Gewarnd:** ${warnUser} (${warnUser.id})
-    **Warning door:** ${message.author}
-    **Redenen: ** ${reason}`)
-    .addField("Aantal warns", warns[warnUser.id].warns);
+    .setDescription(`**Gewarnd:** 
+    **Warning door:** 
+    **Redenen: ** `)
+    .addField("Aantal warns", );
 }
 
 module.exports.help = {
