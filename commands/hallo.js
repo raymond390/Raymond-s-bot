@@ -4,7 +4,7 @@ module.exports.run = async (client, message, args) => {
 
     var embed = new discord.MessageEmbed()
         .setColor("#ff0000")
-        .setThumbnail(kickUser.user.displayAvatarURL)
+        .setThumbnail(user.displayAvatarURL)
         .setFooter(message.member.displayName, message.author.displayAvatarURL)
         .setTimestamp()
         .setDescription(`** Gekickt:** )
