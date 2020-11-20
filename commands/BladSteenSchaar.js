@@ -14,15 +14,15 @@ module.exports.run = async (client, message, args) => {
 
         if (result == "sniper") {
 
-            return message.channel.send(`Ik heb ${result} :notepad_spiral:, Ik win`);
+            return message.channel.send(`Ik heb ${result} , Ik win`);
 
         } else if (result == "clock") {
 
-            return message.channel.send(`Ik heb ${result} :scissors:, Jij wint`);
+            return message.channel.send(`Ik heb ${result} , Jij wint`);
 
         } else if (result == "colt") {
 
-            return message.channel.send(`Ik heb ${result} :moyai:, Het is gelijkspel`);
+            return message.channel.send(`Ik heb ${result} , Het is gelijkspel`);
 
         }
 
@@ -31,15 +31,15 @@ module.exports.run = async (client, message, args) => {
 
         if (result == "clock") {
 
-            return message.channel.send(`Ik heb ${result} :scissors:, Ik win`);
+            return message.channel.send(`Ik heb ${result} , Ik win`);
 
         } else if (result == "colt") {
 
-            return message.channel.send(`Ik heb ${result} :moyai:, Jij wint`);
+            return message.channel.send(`Ik heb ${result} , Jij wint`);
 
         } else if (result == "sniper") {
 
-            return message.channel.send(`Ik heb ${result} :notepad_spiral:, Het is gelijkspel`);
+            return message.channel.send(`Ik heb ${result} , Het is gelijkspel`);
 
         }
 
@@ -47,15 +47,15 @@ module.exports.run = async (client, message, args) => {
 
         if (result == "colt") {
 
-            return message.channel.send(`Ik heb ${result} :moyai:, Ik win`);
+            return message.channel.send(`Ik heb ${result} , Ik win`);
 
         } else if (result == "sniper") {
 
-            return message.channel.send(`Ik heb ${result} :notepad_spiral:, Jij wint`);
+            return message.channel.send(`Ik heb ${result} , Jij wint`);
 
         } else if (result == "clock") {
 
-            return message.channel.send(`Ik heb ${result} :scissors:, Het is gelijkspel`);
+            return message.channel.send(`Ik heb ${result} , Het is gelijkspel`);
 
         }
 
@@ -64,7 +64,7 @@ module.exports.run = async (client, message, args) => {
 }
 
 module.exports.help = {
-    name: "sps",
+    name: "csc",
     description: "",
     category: ""
 }
