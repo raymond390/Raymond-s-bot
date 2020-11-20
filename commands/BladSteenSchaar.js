@@ -4,13 +4,13 @@ module.exports.run = async (client, message, args) => {
 
     // sps m4a1, siper, clock
 
-    if (!args[0]) return message.reply("Gebruik sps <m4a1, sniper, clock>");
+    if (!args[0]) return message.reply("Gebruik sps <colt, sniper, clock>");
 
-    var options = ["m4a1", "sniper", "clock"];
+    var options = ["colt", "sniper", "clock"];
 
     var result = options[Math.floor(Math.random() * options.length)];
 
-    if (args[0].toUpperCase() == "STEEN") {
+    if (args[0].toUpperCase() == "COLT") {
 
         if (result == "sniper") {
 
@@ -20,7 +20,7 @@ module.exports.run = async (client, message, args) => {
 
             return message.channel.send(`Ik heb ${result} :scissors:, Jij wint`);
 
-        } else if (result == "m4a1") {
+        } else if (result == "colt") {
 
             return message.channel.send(`Ik heb ${result} :moyai:, Het is gelijkspel`);
 
@@ -33,7 +33,7 @@ module.exports.run = async (client, message, args) => {
 
             return message.channel.send(`Ik heb ${result} :scissors:, Ik win`);
 
-        } else if (result == "m4a1") {
+        } else if (result == "colt") {
 
             return message.channel.send(`Ik heb ${result} :moyai:, Jij wint`);
 
@@ -45,7 +45,7 @@ module.exports.run = async (client, message, args) => {
 
     } else if (args[0].toUpperCase() == "CLOCK") {
 
-        if (result == "m4a1") {
+        if (result == "colt") {
 
             return message.channel.send(`Ik heb ${result} :moyai:, Ik win`);
 
