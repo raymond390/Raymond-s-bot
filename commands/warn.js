@@ -47,7 +47,7 @@ module.exports.run = async (client, message, args) => {
 
     channel.send(embed);
 
-    if (warns[warnUser.id].warns == 2) {
+    if (warns[warnUser.id].warns == 3) {
 
         var embed = new discord.MessageEmbed()
             .setColor("#ff0000")
