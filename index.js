@@ -67,14 +67,9 @@ client.on("guildMemberAdd", member => {
         }
 
     });
-    if(message.content.startsWith(prefix+"say"))
-    {
-    const args = message.content.slice().split(" ");
-    const saymessage = args.join(" ");
-    message.channel.send(saymessage);
- 
-    }
-});
+
+    
+
 
     var channel = member.guild.channels.cache.get('778617880118820874');
 
