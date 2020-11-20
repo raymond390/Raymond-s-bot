@@ -27,7 +27,7 @@ module.exports.run = async (client, message, args) => {
         }
 
     }
-    else if (args[0].toUpperCase() == "PAPIER") {
+    else if (args[0].toUpperCase() == "SNIPER") {
 
         if (result == "clock") {
 
@@ -43,7 +43,7 @@ module.exports.run = async (client, message, args) => {
 
         }
 
-    } else if (args[0].toUpperCase() == "SCHAAR") {
+    } else if (args[0].toUpperCase() == "CLOCK") {
 
         if (result == "m4a1") {
 
