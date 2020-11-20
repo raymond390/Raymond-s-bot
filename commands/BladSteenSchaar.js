@@ -2,7 +2,7 @@ const discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
 
-    // sps steen, papier, schaar
+    // sps m4a1, siper, clock
 
     if (!args[0]) return message.reply("Gebruik sps <m4a1, sniper, clock>");
 
@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
 
     var result = options[Math.floor(Math.random() * options.length)];
 
-    if (args[0].toUpperCase() == "m4a1") {
+    if (args[0].toUpperCase() == "STEEN") {
 
         if (result == "sniper") {
 
@@ -27,7 +27,7 @@ module.exports.run = async (client, message, args) => {
         }
 
     }
-    else if (args[0].toUpperCase() == "sniper") {
+    else if (args[0].toUpperCase() == "PAPIER") {
 
         if (result == "clock") {
 
@@ -43,7 +43,7 @@ module.exports.run = async (client, message, args) => {
 
         }
 
-    } else if (args[0].toUpperCase() == "clock") {
+    } else if (args[0].toUpperCase() == "SCHAAR") {
 
         if (result == "m4a1") {
 
