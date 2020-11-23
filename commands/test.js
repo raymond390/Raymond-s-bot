@@ -8,7 +8,7 @@ module.exports.run = async (client, message, args) => {
         .setFooter(message.member.displayName, message.author.displayAvatarURL)
         .setTimestamp()
         .setDescription(` **Redenen: ** ${reason}`)
-        .addField("Aantal warns", warns[warnUser.id].warns);
+        .addField()
 
 }
 
