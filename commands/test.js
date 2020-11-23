@@ -5,7 +5,7 @@ module.exports.run = async (client, message, args) => {
     
     var embed = new discord.MessageEmbed()
         .setColor("#ff0000")
-        .setFooter(message.member.displayName, message.author.displayAvatarURL)
+        .setFooter()
         .setTimestamp()
         .setDescription(` **Redenen: ** ${reason}`)
         .addField()
