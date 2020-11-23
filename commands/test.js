@@ -3,7 +3,7 @@ const discord = require("discord.js");
 module.exports.run = async (client, message, args) => {
     var reason = args.slice(1).join(" ");
     
-    var embed = new discord.MessageEmbed()
+    var botEmbed = new discord.MessageEmbed()
         .setColor("#ff0000")
         .setFooter()
         .setTimestamp()
