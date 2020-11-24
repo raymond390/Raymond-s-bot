@@ -2,13 +2,16 @@ const discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
     var test = args.slice(0).join(" ");
-    
+    var time = args.slice(1).join(" ");
+    var type = args.slice(0).join(" ");
+    var a = args.slice(0).join(" ");
+
     var botEmbed = new discord.MessageEmbed()
     .setTitle('Defensie')
     .setColor("#0099ff")
-    .setTimestamp()
     .setDescription(`
-    **Redenen: ** ${test}`)
+    ** Training ** ${test})
+    ** tijd ** ${time})`)
     .setThumbnail('https://yt3.ggpht.com/a/AGF-l7_P42jUnWAoIvDDHzQH27EIOs5hAoDAwfdgug=s900-c-k-c0xffffffff-no-rj-mo')
     .setImage('https://f.jwwb.nl/public/g/w/t/temp-mxahzxdricxvqfpwpnhx/lm5nsv/km.jpg')
     .setFooter('Defensie', '');
