@@ -2,7 +2,7 @@ const discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
     var dienst = args.slice(0).join(" ");
-    var time = args.slice(3).join(" ");
+    var time = args.slice(2).join(" ");
     var type = args.slice(1).join(" ");
     var a = args.slice(0).join(" ");
 
