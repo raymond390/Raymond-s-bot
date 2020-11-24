@@ -7,7 +7,7 @@ module.exports.run = async (client, message, args) => {
 
     var type = args.slice(1).join(" ");
 
-    var a = args.slice(4).join(" ");
+    var a = args.slice(0).join(" ");
 
     var botEmbed = new discord.MessageEmbed()
     .setTitle('Defensie')
@@ -16,6 +16,7 @@ module.exports.run = async (client, message, args) => {
     ** Dienst **  ${dienst}
     ** type-Training ** ${type}
     ** Host ** ${time}`)
+    .setThumbnail('https://yt3.ggpht.com/a/AGF-l7_P42jUnWAoIvDDHzQH27EIOs5hAoDAwfdgug=s900-c-k-c0xffffffff-no-rj-mo')
     .setFooter('Defensie', '');
 
 
