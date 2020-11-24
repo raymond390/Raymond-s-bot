@@ -1,8 +1,7 @@
 const discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
-    const args = message.content.slice(prefix.length).split(/ +/);
-    var test = args.slice(1).join(" ");
+    var test = args.slice(o).join(" ");
     var dienst = args.slice(2).join(" ");
     var type = args.slice(3).join(" ");
     var a = args.slice(0).join(" ");
