@@ -10,8 +10,6 @@ module.exports.run = async (client, message, args) => {
     .setTitle('Defensie')
     .setColor("#0099ff")
     .setTimestamp()
-    .setDescription(`
-    `)
     .addFields(
         {name:" ** Training **" , value:` ${test} `},
         {name:" ** Dienst **" , value:` ${dienst} `},
