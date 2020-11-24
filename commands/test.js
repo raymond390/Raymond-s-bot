@@ -4,16 +4,16 @@ module.exports.run = async (client, message, args) => {
     var test = args.slice(0).join(" ");
     var dienst = args.slice(1).join(" ");
     var type = args.slice(2).join(" ");
-    var a = args.slice(3).join(" ");
+    var text = args.splice(1, args.length).join(" ")
 
     var botEmbed = new discord.MessageEmbed()
     .setTitle('Defensie')
     .setColor("#0099ff")
     .setTimestamp()
     .setDescription(`
-    ** Training ** ${test}`)
+   `)
     .addFields(
-        {name:" ** Training **" , value:` ${test} `},
+        {name:" ** Training **" , value: text},
         {name:" ** Dienst **" , value:` ${dienst} `},
         {name:" ** Type-Training **" , value:` ${type} `},
         {name:" ** Host **" , value:` ${message.author} `}
