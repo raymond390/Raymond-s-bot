@@ -10,12 +10,9 @@ module.exports.run = async (client, message, args) => {
     .setTitle('Defensie')
     .setColor("#0099ff")
     .setDescription(`
-    ** Dienst **
-     ${dienst})
-    ** type-Training ** 
-    ${type}
-    ** Host ** 
-    ${time}`)
+    ** Dienst **  ${dienst}
+    ** type-Training ** ${type}
+    ** Host ** ${time}`)
     
     .setThumbnail('https://yt3.ggpht.com/a/AGF-l7_P42jUnWAoIvDDHzQH27EIOs5hAoDAwfdgug=s900-c-k-c0xffffffff-no-rj-mo')
     .setImage('https://f.jwwb.nl/public/g/w/t/temp-mxahzxdricxvqfpwpnhx/lm5nsv/km.jpg')
