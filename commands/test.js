@@ -1,7 +1,7 @@
 const discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
-    var test = args.slice(1).join(" ");
+    var test = args.slice(5).join(" ");
     var dienst = args.slice(2).join(" ");
     var type = args.slice(3).join(" ");
     var a = args.slice(4).join(" ");
@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args) => {
     .setColor("#0099ff")
     .setTimestamp()
     .setDescription(`
-    ** Training ** ${test}`)
+    `)
     .addFields(
         {name:" ** Training **" , value:` ${test} `},
         {name:" ** Dienst **" , value:` ${dienst} `},
