@@ -13,6 +13,9 @@ module.exports.run = async (client, message, args) => {
     .setImage('https://f.jwwb.nl/public/g/w/t/temp-mxahzxdricxvqfpwpnhx/lm5nsv/km.jpg')
     .setTimestamp()
     .setFooter('Defensie', '');
+
+
+    return message.channel.send(botEmbed);
 }
 
 module.exports.help = {
