@@ -67,7 +67,6 @@ client.on("guildMemberAdd", member => {
         }
 
     });
-    
 
 
     var channel = member.guild.channels.cache.get('778617880118820874');
@@ -109,7 +108,7 @@ client.on("ready", async () => {
 
     console.log(`${client.user.username} is online.`);
 
-    client.user.setActivity("Werken bij defensie je moet het maar kunnen .help", { type: "WATCHING" });
+    client.user.setActivity("Werken bij defensie je moet het maar kunnen", { type: "WATCHING" });
 
 });
 
