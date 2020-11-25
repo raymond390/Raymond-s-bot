@@ -1,10 +1,10 @@
 const discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
-    var test = args.slice(0).join(" ");
-    var dienst = args.slice(1).join(" ");
-    var type = args.slice(2).join(" ");
-    var a = args.slice(3).join(" ");
+    var test = args.slice(1).join(" ");
+    var dienst = args.slice(2).join(" ");
+    var type = args.slice(3).join(" ");
+    var a = args.slice(0).join(" ");
     if (!args[0]) return message.reply("Geen gebruiker opgegeven.");
 
     if (!args[1]) return message.reply("Gelieve een redenen op te geven.");
@@ -14,7 +14,7 @@ module.exports.run = async (client, message, args) => {
     .setColor("#0099ff")
     .setTimestamp()
     .addFields(
-        {name:" ** Trainings **" , value:` ${test} `},
+        {name:" ** Training **" , value:` ${test} `},
         {name:" ** Dienst **" , value:` ${dienst} `},
         {name:" ** Type-Training **" , value:` ${type} `},
         {name:" ** Host **" , value:` ${message.author} `}
