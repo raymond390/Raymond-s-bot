@@ -2,8 +2,8 @@ const discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
     var test = args.slice(0).join(" ");
-    var dienst = args.slice(2).join(" ");
-    var type = args.slice(3).join(" ");
+    var dienst = args.slice(0).join(" ");
+    var type = args.slice(0).join(" ");
     var a = args.slice(0).join(" ");
     if (!args[0]) return message.reply("Geen gebruiker opgegeven.");
 
